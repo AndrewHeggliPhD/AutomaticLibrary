@@ -64,12 +64,12 @@ files <- sftp::sftp_list(sftp_con, type = "f")
 ZipN <- sort(files$name)
 
 ##  Import name for files that are already in the library
-OvAll <- scan(file.path(Data_path, 'Mappe', 'TxtFil.txt'), what = character(), encoding = "UTF-8")
+OvAll <- scan(file.path(Data_path, 'Mappe', 'OverfortAllerede.txt'), what = character(), encoding = "UTF-8")
 
 ##  Which files are not yet transferred? 
 ZipN <- ZipN[!is.element(ZipN,OvAll)]
 
-##  For-loop to download zip files. Which files are specified in "ii in a:b" (from a to b)
+##  For-loop to download zip files that are not yet transferred
 for (ii in 1:length(ZipN)){
   
   ##  Make temporary temporary save file
@@ -146,7 +146,7 @@ for (ii in 1:length(ZipN)){
     #Import data frame with individuals that are already in library
     PreDF <- read.csv2(file = file.path(Data_path,'Bibliotek','Bibliotek.csv'))
     
-    #Previous and current data frame
+    #Combine previous and current data frame
     CombiDF <- rbind(PreDF,CombiDF)
   }
   
