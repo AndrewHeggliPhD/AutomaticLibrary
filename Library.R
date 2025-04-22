@@ -1,7 +1,7 @@
 #####         Script to update the library daily	   #####
 ###   "#" is used before text so R does not interpret it as  ###
-###   code. To use text code just remove "#" before the text ###
-###                                                          ###
+###   code. To use text as code just remove "#" before the  ###
+###   text                                                   ###
 ###   Author: Andrew Heggli, PhD.                            ###
 ################################################################
 
