@@ -21,7 +21,7 @@ I developed an **Automated Data Pipeline** in R that functions as a lightweight 
 ### 💻 Technologies
 *   **Language:** R
 *   **Key Libraries:** `sftp` (Remote Transfer), `zip` (Archive handling), `tidyverse` (Data Manipulation).
-*   **Protocol:** SFTP / SSH.
+*   **Protocol:** SFTP
 
 ---
 **Note:** This script was coded **independently** to replace a manual data entry workflow.
