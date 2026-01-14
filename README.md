@@ -1,7 +1,7 @@
 # Bespoke Data Automation Tool (ETL)
 
 ### 📄 Overview
-This repository contains a production R-script (`Library.R`) developed **independently** post-PhD.
+This repository contains a production R-script (`Library.R`) coded **independently** post-PhD.
 
 The project objective was to automate the processing of daily data extracts from a remote server, maintaining a persistent, updateable library (.csv).
 
